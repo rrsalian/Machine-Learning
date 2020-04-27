@@ -24,3 +24,5 @@ arT=ar.T
 
 #Dot mul
 print(ar.dot(arT))
+
+arT.T

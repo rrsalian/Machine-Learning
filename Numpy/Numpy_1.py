@@ -25,4 +25,18 @@ arT=ar.T
 #Dot mul
 print(ar.dot(arT))
 
-arT.T
+""" Determinet of upper triangle matrix is product of diagnal element """
+
+a = np.array([(2, 3, 4), (0, 2, 5), (0, 0, 2)])
+# a
+# array([[2, 3, 4],
+#        [0, 2, 5],
+#        [0, 0, 2]])
+np.linalg.det(a)
+# 7.999999999999998
+
+""" Determinet of row exhanged matrix will change the sign """
+
+a=np.array([(2, 3, 4), (0, 0, 2), (0, 2, 5)])
+np.linalg.det(a)
+# - 7.999999999999998
